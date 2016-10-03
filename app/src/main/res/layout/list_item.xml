@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cont_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_gravity="center_vertical"
+    android:background="#ffffff"
+    android:orientation="horizontal"
+    android:paddingLeft="8dp"
+    android:paddingTop="16dp"
+    android:layout_marginBottom="2dp">
+
+    <ImageView
+        android:id="@+id/poke_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:src="@android:drawable/ic_menu_edit" />
+
+    <TextView
+        android:id="@+id/poke_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:text="Pokemon Name"
+        android:textColor="#112179"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/poke_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|end"
+        android:layout_marginRight="8dp"
+        android:gravity="right"
+        android:textColor="#112179"
+        android:textSize="20dp" />
+
+
+
+</LinearLayout>
