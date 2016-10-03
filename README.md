@@ -1,1 +1,5 @@
 # pokedex
+Pokedex is an android application that only has 2 screens (activities). The main screen (the main activity) displays small images, names and the numbers of a 150 Pokemns in a recycler view. when a particular pokemon item is selected from the list, the details of the selected pokemon is displayed in the details screen (details activity).
+The 150 pokemons are downloaded from the PokeAPI using the Retrofit Libirary. For the first time the application is run, it download a 150 pokenoms using one of the PokeAPI endpoints then store the Id, Name and the front image of these pokemons in a SQLite database that has only one table with an Id (Integer), Name (String) and Image (Blob) columns. Note, the application needs to be restarted after firs time it's installed in order to read from the database.
+when the pokemon is selected from the list, its Id is passed to the details activity and another call to another endpoint to PokeAPI is made in order to pull down the details of that particular pokemon. 
+The details page has: name, number, wheight, height, order, ability, specise, some stats and only the top 5 moves.
